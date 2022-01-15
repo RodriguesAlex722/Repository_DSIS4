@@ -27,7 +27,7 @@ public class ClienteDao {
 		try {
 			em.getTransaction().begin();
 
-			if (c.getId()==null) {
+			if (c.getId()==null){
 				try {
 					em.persist(c);
 				} catch (PersistenceException de) {
